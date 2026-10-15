@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#0b1730">
+	<meta name="description" content="A clean temperature converter for Celsius, Fahrenheit, and Kelvin.">
+	<title>ETHERMO | Temperature Converter</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script src="style.js" defer></script>
+</head>
+<body>
+	<header class="site-header">
+		<a class="brand" href="#home" aria-label="Thermo home"><span class="brand-mark" aria-hidden="true">°</span>ETHERMO<span class="brand-period">.</span></a>
+		<div class="header-note"><span class="status-dot" aria-hidden="true"></span> UNIT CONVERTER <span class="header-divider">/</span> 01</div>
+	</header>
+
+	<main id="home">
+		<section class="converter-shell" aria-labelledby="page-title">
+			<div class="converter-heading">
+				<div>
+					<p class="eyebrow">A LITTLE PERSPECTIVE ON TEMPERATURE</p>
+					<h1 id="page-title">TEMPRETURE<br><span>CONVERTOR</span><b>.</b></h1>
+				</div>
+				<div class="heading-mark" aria-hidden="true"><span>°C</span><i></i><span>°F</span><i></i><span>K</span></div>
+			</div>
+
+			<div class="converter-tool">
+				<form class="input-panel" id="converter-form" novalidate>
+					<div class="panel-label"><span>01</span> YOUR TEMPERATURE</div>
+					<label class="field-label" for="temperature-input">Temperature value</label>
+					<div class="input-row">
+						<input id="temperature-input" name="temperature" type="text" inputmode="decimal" autocomplete="off" placeholder="e.g. 24" aria-describedby="input-error absolute-zero-hint" aria-invalid="false">
+						<label class="visually-hidden" for="input-unit">Input unit</label>
+						<select id="input-unit" name="unit">
+							<option value="celsius">°C&nbsp; Celsius</option>
+							<option value="fahrenheit">°F&nbsp; Fahrenheit</option>
+							<option value="kelvin">K&nbsp;&nbsp; Kelvin</option>
+						</select>
+					</div>
+					<p class="form-error" id="input-error" role="status" aria-live="polite"></p>
+					<p class="absolute-zero-hint" id="absolute-zero-hint">Valid from absolute zero: −273.15 °C · −459.67 °F · 0 K</p>
+					<button class="convert-button" type="submit">Convert temperature <span aria-hidden="true">↗</span></button>
+					<p class="form-footnote"><span aria-hidden="true">↳</span> Enter a value and choose its scale</p>
+				</form>
+
+				<section class="results-panel" aria-labelledby="results-title" aria-live="polite" aria-atomic="true">
+					<div class="results-topline">
+						<div class="panel-label"><span>02</span> THE CONVERSION</div>
+						<span class="result-indicator" aria-hidden="true"><i></i> READY</span>
+					</div>
+					<h2 id="results-title">In every scale</h2>
+					<p class="result-summary" id="result-summary">Your converted values will appear here.</p>
+					<dl class="result-list">
+						<div class="result-row" data-result="celsius">
+							<dt><span class="unit-symbol">°C</span><span class="unit-name">Celsius</span><span class="source-tag" hidden>INPUT</span></dt>
+							<dd id="result-celsius">--</dd>
+						</div>
+						<div class="result-row" data-result="fahrenheit">
+							<dt><span class="unit-symbol">°F</span><span class="unit-name">Fahrenheit</span><span class="source-tag" hidden>INPUT</span></dt>
+							<dd id="result-fahrenheit">--</dd>
+						</div>
+						<div class="result-row" data-result="kelvin">
+							<dt><span class="unit-symbol">K</span><span class="unit-name">Kelvin</span><span class="source-tag" hidden>INPUT</span></dt>
+							<dd id="result-kelvin">--</dd>
+						</div>
+					</dl>
+					<p class="precision-note"><span aria-hidden="true">*</span> Rounded to two decimal places</p>
+				</section>
+			</div>
+
+			<footer class="tool-footer">
+				<span>THREE SCALES. ONE SIMPLE TOOL.</span>
+				<span>CELSIUS <i></i> FAHRENHEIT <i></i> KELVIN</span>
+			</footer>
+		</section>
+		<div class="temperature-watermark" aria-hidden="true">🌡️</div>
+		<div class="ambient-orbit orbit-left" aria-hidden="true"></div>
+		<div class="ambient-orbit orbit-right" aria-hidden="true"></div>
+	</main>
+
+	<footer class="site-footer">
+		<div class="footer-brand">
+			<a class="brand" href="#home" aria-label="Ethermo home"><span class="brand-mark" aria-hidden="true">°</span>ETHERMO<span class="brand-period">.</span></a>
+			<p>Temperature, in perspective.</p>
+		</div>
+		<div class="footer-contact">
+			<h2>CONTACT</h2>
+			<a href="mailto:hello@example.com">hello@example.com</a>
+		</div>
+		<nav class="footer-social" aria-label="Social links">
+			<h2>FOLLOW</h2>
+			<div class="footer-social-links">
+				<a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+				<a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+			</div>
+		</nav>
+		<p class="footer-copyright">© 2026 ETHERMO</p>
+	</footer>
+	<div class="cursor-circle" aria-hidden="true"></div>
+</body>
+</html>
