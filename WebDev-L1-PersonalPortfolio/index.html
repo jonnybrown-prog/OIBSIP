@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#151b1a">
+	<meta name="description" content="Yihonal Israel is a product designer and front-end developer making thoughtful digital experiences.">
+	<title>Yihonal Israel — Graphics Designer & Developer</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="site-header">
+		<a class="brand" href="#home" aria-label="Yihonal Israel home">YI<span>.</span></a>
+		<nav class="site-nav" aria-label="Main navigation">
+			<a href="#about">About</a>
+			<a href="#work">Work</a>
+			<a href="#skills">Skills</a>
+			<a href="#contact">Contact</a>
+		</nav>
+		<a class="header-link" href="mailto:hello@example.com">LET'S TALK <span aria-hidden="true">↗</span></a>
+	</header>
+
+	<main>
+		<section class="hero" id="home" aria-labelledby="hero-title">
+			<div class="hero-copy">
+				<p class="eyebrow"><span class="availability-dot"></span> AVAILABLE FOR SELECT PROJECTS</p>
+				<h1 id="hero-title"><span class="typed-name typed-first">Yihonal</span><br><span class="typed-name typed-last">Israel</span><b>.</b></h1>
+				<p class="role-line">Graphics designer <span>+</span> front-end developer</p>
+				<p class="hero-description">I turn complex ideas into clear, useful digital experiences, from the first sketch to the final line of code.</p>
+				<div class="hero-actions">
+					<a class="button button-dark" href="#work">Explore my work <span aria-hidden="true">↓</span></a>
+					<a class="text-link" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+				</div>
+				<div class="hero-meta"><span>BASED IN BROOKLYN, NY</span><span>WORKING EVERYWHERE</span></div>
+			</div>
+
+			<figure class="portrait-wrap">
+				<div class="portrait-frame">
+					<img src="img.JPG" alt="Portrait of Yihonal Israel" fetchpriority="high">
+				</div>
+				<span class="portrait-index" aria-hidden="true">FIG. 01 / Y.I.</span>
+				<span class="portrait-stamp" aria-hidden="true">CODE<br>WITH<br>YIHONAL</span>
+			</figure>
+			<span class="hero-coordinate" aria-hidden="true">40° 41′ 00.4″ N<br>73° 59′ 11.2″ W</span>
+		</section>
+
+		<section class="about section-wrap" id="about" aria-labelledby="about-title">
+			<div class="section-kicker"><span>01</span> A LITTLE ABOUT ME</div>
+			<div class="about-copy">
+				<h2 id="about-title">Curious by nature.<br><span>Intentional by design.</span></h2>
+				<div class="about-body">
+					<p>I’m yihonal, a product designer and front-end developer who enjoys making technology feel a little more human. I’ve spent the last six years helping small teams turn ambitious ideas into useful, considered products.</p>
+					<p>When I’m away from the screen, you’ll find me taking street photographs, collecting cookbooks, or looking for a longer route home.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="work-section" id="work" aria-labelledby="work-title">
+			<div class="section-wrap">
+				<div class="section-heading">
+					<div>
+						<div class="section-kicker"><span>02</span> SELECTED PROJECTS</div>
+						<h2 id="work-title">A few things<br><span>made with care.</span></h2>
+					</div>
+					<p class="section-aside">A small selection of product, interface, and front-end work.<br>Personal projects shown for portfolio demonstration.</p>
+				</div>
+
+				<div class="project-grid">
+					<article class="project-card">
+						<a class="project-image project-image-fern" href="https://github.com/yourusername/fern-finance" target="_blank" rel="noopener noreferrer" aria-label="View Fern Finance project on GitHub">
+							<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&amp;fit=crop&amp;w=1300&amp;q=85" alt="Analytics dashboard displayed on a computer">
+							<pre class="code-overlay" aria-hidden="true"><code>const money = {
+  clarity: "first",
+  noise: false
+};</code></pre>
+							<span class="project-number">PROJECT / 01</span>
+							<span class="project-arrow" aria-hidden="true">↗</span>
+						</a>
+						<div class="project-info">
+							<div><h3>Fern Finance</h3><p>A calmer way to understand your money.</p></div>
+							<ul class="project-tags" aria-label="Technologies used"><li>PRODUCT DESIGN</li><li>REACT</li></ul>
+						</div>
+					</article>
+
+					<article class="project-card">
+						<a class="project-image project-image-field" href="https://github.com/yourusername/fieldnotes" target="_blank" rel="noopener noreferrer" aria-label="View Fieldnotes project on GitHub">
+							<img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&amp;fit=crop&amp;w=1300&amp;q=85" alt="Notebook and laptop set up for a focused writing session">
+							<pre class="code-overlay" aria-hidden="true"><code>const note = {
+  status: "in progress",
+  saved: true
+};</code></pre>
+							<span class="project-number">PROJECT / 02</span>
+							<span class="project-arrow" aria-hidden="true">↗</span>
+						</a>
+						<div class="project-info">
+							<div><h3>Fieldnotes</h3><p>A digital garden for ideas in progress.</p></div>
+							<ul class="project-tags" aria-label="Technologies used"><li>UI DESIGN</li><li>CSS</li></ul>
+						</div>
+					</article>
+
+					<article class="project-card">
+						<a class="project-image project-image-atelier" href="https://github.com/yourusername/atelier" target="_blank" rel="noopener noreferrer" aria-label="View Atelier project on GitHub">
+							<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&amp;fit=crop&amp;w=1300&amp;q=85" alt="Creative desk with design materials and laptop">
+							<pre class="code-overlay" aria-hidden="true"><code>const studio = {
+  rhythm: "steady",
+  output: "thoughtful"
+};</code></pre>
+							<span class="project-number">PROJECT / 03</span>
+							<span class="project-arrow" aria-hidden="true">↗</span>
+						</a>
+						<div class="project-info">
+							<div><h3>Atelier</h3><p>Creative tools for a calmer design process.</p></div>
+							<ul class="project-tags" aria-label="Technologies used"><li>UX</li><li>FIGMA</li></ul>
+						</div>
+					</article>
+
+					<article class="project-card">
+						<a class="project-image project-image-arc" href="https://github.com/yourusername/arc" target="_blank" rel="noopener noreferrer" aria-label="View Arc project on GitHub">
+							<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&amp;fit=crop&amp;w=1300&amp;q=85" alt="Laptop and workspace with a clean workflow setup">
+							<pre class="code-overlay" aria-hidden="true"><code>const system = {
+  focus: "deep",
+  energy: "high"
+};</code></pre>
+							<span class="project-number">PROJECT / 04</span>
+							<span class="project-arrow" aria-hidden="true">↗</span>
+						</a>
+						<div class="project-info">
+							<div><h3>Arc</h3><p>Design systems built to keep teams moving.</p></div>
+							<ul class="project-tags" aria-label="Technologies used"><li>DESIGN SYSTEM</li><li>JS</li></ul>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section class="skills-section section-wrap" id="skills" aria-labelledby="skills-title">
+			<div class="section-kicker"><span>03</span> TOOLS OF THE TRADE</div>
+			<div class="skills-content">
+				<div class="skills-intro">
+					<h2 id="skills-title">Good ideas,<br><span>well made.</span></h2>
+					<p>I work across the whole product process, bringing design and engineering together to make the details count.</p>
+				</div>
+				<div class="skill-meter-list" aria-label="Coding skills">
+					<div class="skill-meter" role="meter" aria-label="HTML proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90">
+						<div class="skill-meter-heading"><h3>HTML</h3><span>90%</span></div>
+						<div class="skill-meter-track" aria-hidden="true"><span class="skill-fill-html"></span></div>
+					</div>
+					<div class="skill-meter" role="meter" aria-label="CSS proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85">
+						<div class="skill-meter-heading"><h3>CSS</h3><span>85%</span></div>
+						<div class="skill-meter-track" aria-hidden="true"><span class="skill-fill-css"></span></div>
+					</div>
+					<div class="skill-meter" role="meter" aria-label="JavaScript proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90">
+						<div class="skill-meter-heading"><h3>JavaScript</h3><span>90%</span></div>
+						<div class="skill-meter-track" aria-hidden="true"><span class="skill-fill-javascript"></span></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="contact-section" id="contact" aria-labelledby="contact-title">
+			<div class="contact-inner">
+				<div class="section-kicker"><span>04</span> HAVE A GOOD ONE IN MIND?</div>
+				<div class="contact-row">
+					<div class="contact-info-panel">
+						<div class="contact-details contact-box">
+							<p>Have a project, a question, or just want to say hello? My inbox is open.</p>
+							<a class="contact-email" href="mailto:hello@example.com">hello@example.com <span aria-hidden="true">↗</span></a>
+							<div class="social-links" aria-label="Social links">
+								<a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a>
+								<a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+							</div>
+						</div>
+					</div>
+					<form class="contact-form" action="#" method="post">
+						<div class="field">
+							<label for="name">Name</label>
+							<input id="name" name="name" type="text" placeholder="Your name" />
+						</div>
+						<div class="field">
+							<label for="email">Email</label>
+							<input id="email" name="email" type="email" placeholder="Your email" />
+						</div>
+						<div class="field field-full">
+							<label for="message">Message</label>
+							<textarea id="message" name="message" rows="5" placeholder="Tell me about your project"></textarea>
+						</div>
+						<button type="submit">Send inquiry</button>
+					</form>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<a class="brand" href="#home" aria-label="Yihonal Israel, back to top">YI<span>.</span></a>
+		<span>DESIGNED & BUILT BY YIHONAL ISRAEL</span>
+		<a class="footer-hire" href="mailto:hello@example.com">Hire Me</a>
+		<a href="#home">BACK TO TOP ↑</a>
+		<span>© 2026</span>
+	</footer>
+	<script>
+		const pointerEffectsEnabled = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+		const reducedMotionPreferred = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+		if (pointerEffectsEnabled && !reducedMotionPreferred) {
+			let pendingFrame = false;
+
+			window.addEventListener('pointermove', (event) => {
+				if (pendingFrame) return;
+
+				pendingFrame = true;
+				window.requestAnimationFrame(() => {
+					document.documentElement.style.setProperty('--cursor-x', `${event.clientX}px`);
+					document.documentElement.style.setProperty('--cursor-y', `${event.clientY}px`);
+					document.body.classList.add('has-cursor-glow');
+					pendingFrame = false;
+				});
+			}, { passive: true });
+
+			document.documentElement.addEventListener('pointerleave', () => {
+				document.body.classList.remove('has-cursor-glow');
+			});
+		}
+	</script>
+</body>
+</html>
